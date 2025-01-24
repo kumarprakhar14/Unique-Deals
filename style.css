@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    width: 98vw;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+
+nav #logo {
+    /* width: 135px; */
+}
+
+nav #logo h1{
+    font-family: 'kavoon';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+nav #logo h3 {
+    font-family: 'Agbalumo';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35.52px;
+    text-align: end;
+    margin-top: 0;
+}
+
+#search-bar {
+    position: relative;
+    width: 331px;
+    height: 34px;
+    border: 3px solid #379777;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#search-bar input {
+    height: 100%;
+    width: 100%;
+    margin: 3px;
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+}
+
+#search-bar input:focus {
+    outline: none
+}
+
+#search-bar i {
+    height: 23px;
+    width: 27px;
+    position: absolute;
+    right: 0%;
+    top: 18%;
+}
+
+.nav-items {
+    width: 400px;
+    height: 30px;
+}
+
+.nav-items ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+}
+
+.nav-items ul li {
+    list-style: none;
+    font-family: 'inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.94px;
+    margin: 10px;
+    width: 130px;
+}
+
+.nav-items ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease-in;
+    background: #3797779e;
+    border-radius: 20%;
+}
+
+.nav-items ul li:hover::after {
+    width: 50%;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#login {
+    margin-right: 5px;
+    position: absolute;
+    right: 5%;
+}
+#login h3{
+    font-family: 'inter';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+}
+
+
+#hero {
+    position: relative;
+    height: 60vh; /* adjust if needed */
+    width: calc(100% - 20px);
+    margin: 0 20px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hero #left-content {
+    
+    height: 100%;
+    width: 50%;
+
+}
+
+#left-content #prod-desc {
+    height: 100%;
+    width: 100%;
+}
+
+#left-content #prod-desc h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 5px;
+    padding-top: 5px;
+    
+}
+
+#left-content #prod-desc h3 {
+    margin: 5px 0;
+    padding: 5px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#left-content #prod-desc h3:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    margin-top: 0.5rem;
+    background: #3797779e;
+    transition: all 0.3s;
+    border-radius: 20%;
+}
+
+#left-content #prod-desc h3:hover::after {
+    width: 100px;   /*adjust if needed */
+}
+
+
+#des, #det, #info {
+    margin: 0 2px;
+    padding: 0 2px;
+   border: 1px solid red;
+}
+
+
+#left-content #prod-desc p {
+    /* display: none; */
+}
+/* #det p, #info p {
+    display: none;
+} */
+/* return back above */
+
+#left-content #prod-desc  .active {
+    
+}
+
+
+#price-detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#price-detail #discount h3 {
+    font-size: 28px;
+    font-weight: 200;
+    line-height: 33.89px;
+    font-family: 'inter';
+    color: #CC0C39;
+}
+
+#price-detail #price {
+    font-size: 28px;
+    font-family: 'inter';
+    font-weight: 200;
+    line-height: 21.7px;
+}
+
+#price-detail #price span{
+    font-size: 18px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    margin: 30px 10px;
+    width: 530px;
+    gap: 10px;
+}
+
+#customize-btn button{
+    width: 260px;
+    height: 52px;
+    background-color: #D9D9D9;
+    border: 1px solid transparent;
+    font-size: 20px;
+    line-height: 24.2px;
+    font-weight: 200;
+    font-family: 'inter';
+}
+
+#customize-btn button:hover {
+    cursor: pointer;
+    background-color: #d9d9d9ba;
+    font-weight: 400;
+}
+
+#buy-btn button {
+    width: 260px;
+    height: 52px;
+    background-color: #379777;
+    border: 1px solid transparent;
+    font-size: 20px;
+    line-height: 24.2px;
+    font-weight: 200;
+    font-family: 'inter';
+}
+
+#buy-btn button:hover {
+    cursor: pointer;
+    background-color: #379777e4;
+    font-weight: 400;
+}
+
+#hero #right-content {
+    
+}
