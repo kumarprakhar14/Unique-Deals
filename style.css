@@ -115,18 +115,25 @@ nav #logo h3 {
     color: #000;
 }
 
-#login {
-    margin-right: 5px;
+#nav-icons {
+    margin-right: auto;
     position: absolute;
-    right: 5%;
+    right: 0;
+    width: 10%;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#login h3{
-    font-family: 'inter';
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16.94px;
+#nav-icons a{
+    margin: 15px;
+    color: #000;
 }
 
+#nav-icons a i {
+    font-size: 24px;
+    
+}
 
 #hero {
     position: relative;
@@ -190,15 +197,20 @@ nav #logo h3 {
 }
 
 
-#left-content #prod-desc p {
-    /* display: none; */
+#left-content p {
+    display: none;
 }
+#des p {
+    display: inline-block;
+    width: 100%;
+}
+
 /* #det p, #info p {
     display: none;
 } */
 /* return back above */
 
-#left-content #prod-desc  .active {
+#left-content #prod-desc .active {
     
 }
 
@@ -271,5 +283,9 @@ nav #logo h3 {
 }
 
 #hero #right-content {
-    
+    img {
+        height: 85%;
+        width: 85%;
+        margin-top: 120px;
+    }
 }
