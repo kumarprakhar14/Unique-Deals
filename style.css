@@ -270,6 +270,9 @@ nav #logo h3 {
     font-weight: 400;
 }
 
-#hero #right-content {
-    
+#right-content {
+    height: ;
+ display: flex;
+  justify-items: center;
+
 }
