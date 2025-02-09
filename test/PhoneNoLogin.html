@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+
+<style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+</style>
+
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+
+      <div id="recaptcha"></div>
+      <button type="button" id="sentOPT-btn">Send OTP</button>
+
+      <div id="otpContainer" style="display:none;">
+        <label for="otp">OTP:</label>
+        <input type="text" id="otp" name="otp" required>
+      </div>
+
+      <button type="button" id="submitBtn" style="display:none;">Submit</button>
+    </form>
+  </div>
+
+  <script>
+//     function sendOTP() {
+
+//   // Generate and send OTP logic goes here (you may use a backend API)
+
+//   // Show the OTP input and submit button
+//   document.getElementById("otpContainer").style.display = "block";
+//   document.getElementById("submitBtn").style.display = "block";
+// }
+
+// function isValidMobileNumber(mobile) {
+//   // You may want to implement more robust validation logic
+//   return /^[0-9]{10}$/.test(mobile);
+// }
+
+// function submitForm() {
+//   const fullName = document.getElementById("fullName").value;
+//   const mobile = document.getElementById("mobile").value;
+//   const otp = document.getElementById("otp").value;
+
+//   // Registration logic goes here (you may use a backend API)
+//   // For simplicity, let's just log the registration details to the console
+//   console.log("Registration successful!");
+//   console.log("Full Name:", fullName);
+//   console.log("Mobile:", mobile);
+// }
+
+  </script>
+  <script src="phonelogin.js" type="module"></script>
+</body>
+
+</html>
